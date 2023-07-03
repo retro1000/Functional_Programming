@@ -1,5 +1,5 @@
 def main(args: Array[String]):Unit={
-    val interestAmount:Double=interest(-1)
+    val interestAmount:Double=interest(234490)
     println(if interestAmount == -1.0 then "Wrong amount entered!!!" else interestAmount)
 }
 
