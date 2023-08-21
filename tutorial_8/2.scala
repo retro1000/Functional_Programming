@@ -1,5 +1,8 @@
-def main(args:Array[String]):Unit={
-    println(patternMatch(-1))
+import scala.io.StdIn
+
+def main(args: Array[String]):Unit={
+    val number=StdIn.readInt()
+    println(patternMatch(number))
 }
 
 val patternMatch = (x:Int) => x match{
