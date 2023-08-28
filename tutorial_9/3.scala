@@ -14,7 +14,7 @@ class Account(private val newAccNo:Int, private var startAmount:Float){
 
     def Transfer(count:Float, account:Account):String = if(count>0 && amount-count>0 && account != null){
                                                             amount=amount-count;
-                                                            account.amount=account.amount-count;
+                                                            account.amount=account.amount+count;
                                                             s"$count succesfully transfered\nAccount amount: $amount \n\n";
                                                         }else "Account balance insufficient or invalid input!!!"
 }

@@ -15,7 +15,7 @@ def main(args: Array[String]):Unit={
     val accountList:List[Account] = List(new Account(100, 20000.00), new Account(101, 10000.00), new Account(102, 50000.00), new Account(103, -100.00), new Account(104, -20000.00))
 
     negativeList(accountList).map(account=>println(account.getAccNo()+" - "+account.getAmount()))
-    println("\n"+balance(accountList)+"\n")
+    println("\n"+"Balance"+" "+balance(accountList)+"\n")
     interest(accountList)
     accountList.map(account=>println(account.getAccNo()+" - "+account.getAmount()))
 }

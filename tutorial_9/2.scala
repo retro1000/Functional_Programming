@@ -1,4 +1,5 @@
 class Rational(val n:Int, val d:Int){
+    require(d != 0, "The denominator  musy be non zero")
     val numerator = n
     val denominator = d
 
